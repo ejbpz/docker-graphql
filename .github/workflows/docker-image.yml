@@ -26,7 +26,9 @@ jobs:
     - name: Build Docker image
       run: |
         docker build -t ejbpz/docker-graphql:0.0.1 .
+        docker build -t ejbpz/docker-graphql:latest .
 
     - name: Push Docker image
       run: |
         docker push ejbpz/docker-graphql:0.0.1
+        docker push ejbpz/docker-graphql:latest
